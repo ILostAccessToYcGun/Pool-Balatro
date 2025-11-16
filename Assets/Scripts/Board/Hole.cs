@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class Hole : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class Hole : MonoBehaviour
                 Debug.Log("Ball is sunk");
 
                 //Incorporate the score manager here cuz sinking a ball gives red score
+                ScoreManager.instance.redScore += tryGet.Value();
             }
 
         }

@@ -8,6 +8,7 @@ public class Ball : MonoBehaviour
     [SerializeField] Collider2D col;
     [Space]
     [Header("Attributes")]
+    [SerializeField] int value;
     [Range(0.0f, 5.0f)]
     [SerializeField] float bounciness;
     [Range(0.0f, 5.0f)]
@@ -28,11 +29,13 @@ public class Ball : MonoBehaviour
         previousVel = rb.linearVelocity;
     }
 
+    public int Value()
+    {
+        return value;
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //Incorporate the score manager here cuz bounces give blue score 
-
         Vector3 normal;
         Vector2 bounceVel;
 
@@ -52,6 +55,8 @@ public class Ball : MonoBehaviour
             rb2.linearVelocity -= bounceVel;
         }
         rb.linearVelocity += bounceVel;
+
+        ScoreManager.instance.blueScore += value;
 
     }
 }

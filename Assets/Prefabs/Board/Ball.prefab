@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   rb: {fileID: 6499067832439597135}
   col: {fileID: 2948024407887624496}
+  value: 1
   bounciness: 1
   weight: 1
   testVel: {x: 0, y: 0}
