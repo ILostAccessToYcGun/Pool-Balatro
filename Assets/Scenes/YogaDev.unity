@@ -274,9 +274,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   rb: {fileID: 422849132}
   col: {fileID: 422849133}
+  value: 1
   bounciness: 1
   weight: 1
-  testVel: {x: 0, y: 0}
+  testVel: {x: -10, y: 0}
 --- !u!4 &422849136
 Transform:
   m_ObjectHideFlags: 0
@@ -447,9 +448,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   rb: {fileID: 522409396}
   col: {fileID: 522409397}
+  value: 1
   bounciness: 1
   weight: 1
-  testVel: {x: 0, y: 0}
+  testVel: {x: -10, y: 0}
 --- !u!4 &522409400
 Transform:
   m_ObjectHideFlags: 0
@@ -894,9 +896,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   rb: {fileID: 1141973918}
   col: {fileID: 1141973919}
+  value: 1
   bounciness: 1
   weight: 1
-  testVel: {x: 0, y: 0}
+  testVel: {x: -10, y: 0}
 --- !u!4 &1141973922
 Transform:
   m_ObjectHideFlags: 0
@@ -1204,9 +1207,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   rb: {fileID: 1571854327}
   col: {fileID: 1571854328}
+  value: 0
   bounciness: 1
   weight: 1
-  testVel: {x: 0, y: 0}
+  testVel: {x: -10, y: 0}
 --- !u!4 &1571854331
 Transform:
   m_ObjectHideFlags: 0
@@ -1496,6 +1500,63 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1001 &7296183494140224058
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3349560740378846763, guid: d11a9d7404b9d6841820a29b5fea792a, type: 3}
+      propertyPath: m_Name
+      value: ScoreManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534918393945299813, guid: d11a9d7404b9d6841820a29b5fea792a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.5926
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534918393945299813, guid: d11a9d7404b9d6841820a29b5fea792a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.08175
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534918393945299813, guid: d11a9d7404b9d6841820a29b5fea792a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534918393945299813, guid: d11a9d7404b9d6841820a29b5fea792a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534918393945299813, guid: d11a9d7404b9d6841820a29b5fea792a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534918393945299813, guid: d11a9d7404b9d6841820a29b5fea792a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534918393945299813, guid: d11a9d7404b9d6841820a29b5fea792a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534918393945299813, guid: d11a9d7404b9d6841820a29b5fea792a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534918393945299813, guid: d11a9d7404b9d6841820a29b5fea792a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534918393945299813, guid: d11a9d7404b9d6841820a29b5fea792a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d11a9d7404b9d6841820a29b5fea792a, type: 3}
 --- !u!1001 &8094142192479602547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1605,6 +1666,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8868825999845252639, guid: 84395fa576b6f024bb0dd2385610392c, type: 3}
+      propertyPath: testVel.x
+      value: -10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1625,3 +1690,4 @@ SceneRoots:
   - {fileID: 1141973922}
   - {fileID: 422849136}
   - {fileID: 1571854331}
+  - {fileID: 7296183494140224058}
