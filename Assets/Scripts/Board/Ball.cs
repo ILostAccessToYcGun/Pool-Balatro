@@ -1,13 +1,14 @@
 using UnityEngine;
 using static UnityEngine.Rendering.STP;
 
-public class Ball : MonoBehaviour
+public class Ball : MonoBehaviour, IBall
 {
     [Header("Components")]
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Collider2D col;
     [Space]
     [Header("Attributes")]
+    [SerializeField] BallType type;
     [SerializeField] int value;
     [Range(0.0f, 5.0f)]
     [SerializeField] float bounciness;
@@ -16,6 +17,8 @@ public class Ball : MonoBehaviour
 
     public Vector2 testVel;
     private Vector2 previousVel;
+
+    public BallType Type => type;
 
     private void Start()
     {
@@ -58,5 +61,10 @@ public class Ball : MonoBehaviour
 
         ScoreManager.instance.blueScore += value;
 
+    }
+
+    public void OnCollide()
+    {
+        //hi
     }
 }
