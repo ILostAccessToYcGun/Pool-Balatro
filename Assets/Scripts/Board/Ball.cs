@@ -54,7 +54,7 @@ public class Ball : MonoBehaviour, IBall
         if (tryGet != null)
         {
             Rigidbody2D rb2 = collision.gameObject.GetComponent<Rigidbody2D>();
-            bounceVel *= 0.25f * bounciness;
+            bounceVel *= 0.4f * bounciness;
             rb2.linearVelocity -= bounceVel;
         }
         rb.linearVelocity += bounceVel;

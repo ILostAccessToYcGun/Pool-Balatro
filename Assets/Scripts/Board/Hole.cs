@@ -13,7 +13,7 @@ public class Hole : MonoBehaviour
         Ball tryGet = collision.gameObject.GetComponent<Ball>();
         if (tryGet != null)
         {
-            //velocity checking
+            //velocity checking?
             //Rigidbody2D rb2 = collision.gameObject.GetComponent<Rigidbody2D>();
             if (col.bounds.Contains(tryGet.gameObject.transform.position)) //not sure if this is the right collider
             {
